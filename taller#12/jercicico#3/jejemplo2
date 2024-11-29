@@ -1,0 +1,14 @@
+interface Volador {
+    void volar();
+}
+
+class Perro implements Volador {
+    // ¡No tiene sentido que un perro vuele!
+    public void volar() {
+        System.out.println("El perro no puede volar.");
+    }
+}
+////////////////////////////////////
+/// La implementación correcta de interfaces es fundamental para garantizar un código limpio, 
+/// mantenible y extensible. Al comprender los principios detrás de las interfaces y al seguir las buenas prácticas, 
+/// podrás crear diseños de software más robustos y escalables

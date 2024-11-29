@@ -1,0 +1,10 @@
+interface MiInterfaz {
+    void miMetodo();
+}
+
+class MiClase implements MiInterfaz {
+    // ¡Error de compilación! Falta la implementación de miMetodo()
+}
+/////////////////////////////
+//Violación del principio de responsabilidad única (SRP): 
+//Una clase debe tener una única razón para cambiar.

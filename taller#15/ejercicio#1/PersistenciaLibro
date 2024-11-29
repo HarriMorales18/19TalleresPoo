@@ -1,0 +1,11 @@
+public class PersistenciaLibro {
+    public void guardarEnBaseDeDatos(Libro libro) {
+        // Lógica para guardar el libro en la base de datos (simulada aquí)
+        System.out.println("Guardando libro ");
+    }
+
+    public void cargarDesdeBaseDeDatos(String isbn) {
+        // Lógica para cargar el libro desde la base de datos (simulada aquí)
+        System.out.println("Cargando libro con ISBN: " + isbn + " desde ");
+    }
+}

@@ -1,0 +1,6 @@
+public class GeneradorDeEtiqueta {
+    public String generarEtiqueta(Producto producto) {
+        return "Producto: " + producto.getNombre() + "\nPrecio: $" + producto.getPrecioBase() +
+                "\nDescuento: " + producto.getDescuento() * 100 + "%";
+    }
+}

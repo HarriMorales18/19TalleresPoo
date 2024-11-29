@@ -1,0 +1,25 @@
+interface Canal {
+    void enviarMensaje(String destinatario, String mensaje);
+}
+
+class CanalCorreo implements Canal {
+    @Override
+    public void enviarMensaje(String destinatario, String mensaje) {
+        // Dividir el mensaje en asunto y cuerpo (si es necesario)
+        String asunto = "Asunto por defecto";
+        String cuerpo = mensaje;
+        // Utilizar la clase Mensajero para enviar el correo
+        Mensajero mensajero = new Mensajero();
+        mensajero.enviarCorreo(destinatario, asunto, cuerpo);
+    }
+}
+
+class CanalSMS implements Canal {
+    @Override
+    public void enviarMensaje(String destinatario, String mensaje) {
+        System.out.println("Enviando SMS a: " + destinatario);
+        System.out.println("Mensaje: " + mensaje);
+        // Aquí implementarías la lógica real para enviar el SMS usando una librería como Twilio
+    }
+}
+

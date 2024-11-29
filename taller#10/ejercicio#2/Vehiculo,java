@@ -1,0 +1,30 @@
+public class Vehiculo {
+    // Método a sobreescribir
+    public void moverse() {
+        System.out.println("El vehículo se está moviendo.");
+    }
+}
+
+public class Bicicleta extends Vehiculo {
+    // Sobrescribimos el método moverse para la bicicleta
+    @Override
+    public void moverse() {
+        System.out.println("La bicicleta está siendo pedaleada.");
+    }
+}
+
+public class PruebaVehiculo {
+    public static void main(String[] args) {
+        // Creamos un objeto de tipo Vehiculo
+        Vehiculo vehiculo = new Vehiculo();
+        vehiculo.moverse(); // Imprimirá: "El vehículo se está moviendo."
+
+        // Creamos un objeto de tipo Bicicleta
+        Bicicleta bicicleta = new Bicicleta();
+        bicicleta.moverse(); // Imprimirá: "La bicicleta está siendo pedaleada."
+
+        // Polimorfismo: Asignamos un objeto Bicicleta a una referencia de Vehiculo
+        Vehiculo vehiculo2 = new Bicicleta();
+        vehiculo2.moverse(); // Imprimirá: "La bicicleta está siendo pedaleada."
+    }
+}

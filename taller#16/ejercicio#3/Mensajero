@@ -1,0 +1,10 @@
+public class Mensajero {
+    public void enviarCorreo(String destinatario, String asunto, String cuerpo) {
+        // Lógica para enviar el correo electrónico
+        System.out.println("Enviando correo a: " + destinatario);
+        System.out.println("Asunto: " + asunto);
+        System.out.println("Cuerpo: " + cuerpo);
+        
+}
+
+}

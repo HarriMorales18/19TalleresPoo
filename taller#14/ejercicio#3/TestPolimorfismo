@@ -1,0 +1,10 @@
+
+// Clase de prueba con error de compilación
+public class TestPolimorfismo {
+    public static void main(String[] args) {
+        Animal animal = new Perro();
+
+        animal.hacerSonido(); // Funciona correctamente
+        // animal.correr(); // ERROR: El método correr no existe en la clase Animal
+    }
+}

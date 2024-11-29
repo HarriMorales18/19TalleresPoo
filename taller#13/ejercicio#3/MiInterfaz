@@ -1,0 +1,30 @@
+// Definimos la interfaz con dos métodos
+interface MiInterfaz {
+    void metodo1();
+    void metodo2();
+}
+
+// Creamos una clase concreta que implementa la interfaz, pero podemos proporcionar implementaciones vacías
+class ClaseConcreta implements MiInterfaz {
+
+    @Override
+    public void metodo1() {
+        // Implementación del método 1
+        System.out.println("Método 1 implementado.");
+    }
+
+    @Override
+    public void metodo2() {
+        // Implementación del método 2
+        System.out.println("Método 2 implementado.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Aquí la clase concreta implementa correctamente los métodos de la interfaz
+        MiInterfaz obj = new ClaseConcreta();
+        obj.metodo1();
+        obj.metodo2();
+    }
+}

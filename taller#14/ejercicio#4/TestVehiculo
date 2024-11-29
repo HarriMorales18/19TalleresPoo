@@ -1,0 +1,10 @@
+// Clase de prueba
+public class TestVehiculo {
+    public static void main(String[] args) {
+        Vehiculo vehiculo1 = new Coche();
+        Vehiculo vehiculo2 = new Bicicleta();
+
+        vehiculo1.mover(); // Polimorfismo
+        vehiculo2.mover(); // Polimorfismo
+    }
+}

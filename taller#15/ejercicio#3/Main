@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creamos un usuario
+        Usuario usuario = new Usuario("juan123", "miContraseñaSegura");
+
+        // Creamos el sistema de autenticación
+        SistemaAutenticacion sistema = new SistemaAutenticacion();
+
+        // Registramos al usuario
+        sistema.registrarUsuario(usuario);
+
+        // Intentamos autenticar al usuario
+        sistema.autenticarUsuario(usuario, "miContraseñaSegura");
+    }
+}

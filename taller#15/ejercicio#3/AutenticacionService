@@ -1,0 +1,8 @@
+public class AutenticacionService {
+    
+    // Este método puede ser más complejo, por ejemplo, verificando contra una base de datos
+    public boolean autenticar(Usuario usuario, String contrasena) {
+        // Aquí simplemente compararemos la contraseña de forma directa
+        return usuario.getContrasena().equals(contrasena);
+    }
+}

@@ -1,0 +1,23 @@
+// Definimos una clase abstracta
+abstract class MiClaseAbstracta {
+
+    // Método con implementación (no predeterminado)
+    public void metodoConImplementacion() {
+        System.out.println("Este es un método con implementación en una clase abstracta");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creamos una clase anónima que extiende la clase abstracta
+        MiClaseAbstracta obj = new MiClaseAbstracta() {
+            // Podemos sobreescribir el método si es necesario
+            @Override
+            public void metodoConImplementacion() {
+                System.out.println("Método sobrescrito en la clase concreta");
+            }
+        };
+
+        obj.metodoConImplementacion();  // Llama al método, con la implementación o sobrescritura
+    }
+}

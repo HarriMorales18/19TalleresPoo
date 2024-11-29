@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        // Crear una instancia de Libro
+        Libro libro = new Libro("Don Quijote de la Mancha", "Miguel de Cervantes", "123456789", 1024, true);
+
+        // Usar GeneradorReporte para generar un reporte del libro
+        GeneradorReporte generadorReporte = new GeneradorReporte();
+        String reporte = generadorReporte.generarReporte(libro);
+        System.out.println(reporte);
+
+        // Usar PersistenciaLibro para guardar y cargar el libro
+        PersistenciaLibro persistencia = new PersistenciaLibro();
+        persistencia.guardarEnBaseDeDatos(libro);
+        persistencia.cargarDesdeBaseDeDatos(libro.getIsbn());
+    }
+}

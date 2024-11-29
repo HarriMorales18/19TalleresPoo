@@ -1,0 +1,18 @@
+// Clase que extiende Descuento para manejar descuentos fijos
+public class DescuentoFijo extends Descuento {
+    private double cantidadDescuento;
+
+    public DescuentoFijo(double cantidadDescuento) {
+        super(0); // No utilizamos el porcentaje en descuentos fijos.
+        this.cantidadDescuento = cantidadDescuento;
+    }
+
+    @Override
+    public double aplicarDescuento(double precio) {
+        return precio - cantidadDescuento;
+    }
+
+    public double getCantidadDescuento() {
+        return cantidadDescuento;
+    }
+}

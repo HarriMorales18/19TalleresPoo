@@ -1,0 +1,5 @@
+public class CalculadorDePrecio {
+    public double calcularPrecioConDescuento(Producto producto) {
+        return producto.getPrecioBase() - (producto.getPrecioBase() * producto.getDescuento());
+    }
+}

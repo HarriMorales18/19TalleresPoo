@@ -1,0 +1,5 @@
+public class GeneradorReporte {
+    public String generarReporte(Libro libro) {
+        return "Reporte de Libro: \n" + libro.obtenerInformacion();
+    }
+}

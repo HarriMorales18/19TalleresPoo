@@ -1,0 +1,42 @@
+public class Libro {
+    private String titulo;
+    private String autor;
+    private String isbn;
+    private int paginas;
+    private boolean disponible;
+
+    public Libro(String titulo, String autor, String isbn, int paginas, boolean disponible) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.isbn = isbn;
+        this.paginas = paginas;
+        this.disponible = disponible;
+    }
+
+    // Métodos relacionados con la información del libro
+    public String obtenerInformacion() {
+        return "Título: " + titulo + "\nAutor: " + autor + "\nISBN: " + isbn +
+               "\nPáginas: " + paginas + "\nDisponible: " + (disponible ? "Sí" : "No");
+    }
+
+    // Getters y Setters
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public int getPaginas() {
+        return paginas;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+}

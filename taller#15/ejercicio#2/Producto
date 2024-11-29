@@ -1,0 +1,25 @@
+public class Producto {
+    private String nombre;
+    private double precioBase;
+    private double descuento;
+
+    // Constructor
+    public Producto(String nombre, double precioBase, double descuento) {
+        this.nombre = nombre;
+        this.precioBase = precioBase;
+        this.descuento = descuento;
+    }
+
+    // Métodos para obtener los datos del producto
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecioBase() {
+        return precioBase;
+    }
+
+    public double getDescuento() {
+        return descuento;
+    }
+}

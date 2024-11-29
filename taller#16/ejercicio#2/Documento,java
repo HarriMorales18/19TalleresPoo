@@ -1,0 +1,35 @@
+// Clase base Documento que maneja la exportación a PDF
+class Documento {
+    public void exportar() {
+        System.out.println("Exportando documento en formato PDF.");
+    }
+}
+
+// Clase derivada DocumentoWord que maneja la exportación a Word
+class DocumentoWord extends Documento {
+    @Override
+    public void exportar() {
+        System.out.println("Exportando documento en formato Word.");
+    }
+}
+
+// Clase derivada DocumentoExcel que maneja la exportación a Excel
+class DocumentoExcel extends Documento {
+    @Override
+    public void exportar() {
+        System.out.println("Exportando documento en formato Excel.");
+    }
+}
+
+public class GestionDocumentos {
+    public static void main(String[] args) {
+        Documento documentoPdf = new Documento();
+        documentoPdf.exportar(); // Exporta PDF
+
+        Documento documentoWord = new DocumentoWord();
+        documentoWord.exportar(); // Exporta Word
+
+        Documento documentoExcel = new DocumentoExcel();
+        documentoExcel.exportar(); // Exporta Excel
+    }
+}

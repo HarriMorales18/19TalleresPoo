@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        Producto producto = new Producto("Camiseta", 100.0, 0.15); // Producto con 15% de descuento
+
+        // Crear el generador de etiquetas y mostrar la etiqueta
+        GeneradorDeEtiqueta generador = new GeneradorDeEtiqueta();
+        System.out.println(generador.generarEtiqueta(producto));
+
+        // Crear el calculador de precio y mostrar el precio con descuento
+        CalculadorDePrecio calculador = new CalculadorDePrecio();
+        System.out.println("Precio con descuento: $" + calculador.calcularPrecioConDescuento(producto));
+    }
+}

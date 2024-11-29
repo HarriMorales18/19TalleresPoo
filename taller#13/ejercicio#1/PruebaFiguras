@@ -1,0 +1,11 @@
+public class PruebaFiguras {
+    public static void main(String[] args) {
+        // Crear instancias de Rectángulo y Triángulo
+        Figura rectangulo = new Rectangulo(5, 3);
+        Figura triangulo = new Triangulo(4, 6);
+
+        // Mostrar las áreas de las figuras
+        System.out.println("Área del Rectángulo: " + rectangulo.calcularArea());
+        System.out.println("Área del Triángulo: " + triangulo.calcularArea());
+    }
+}

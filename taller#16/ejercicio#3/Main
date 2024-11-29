@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        Mensajero mensajero = new Mensajero();
+
+        // Enviar por correo
+        Canal canalCorreo = new CanalCorreo();
+        mensajero.enviarMensaje(canalCorreo, "usuario@ejemplo.com", "Hola, este es un mensaje de prueba.");
+
+        // Enviar por SMS
+        Canal canalSMS = new CanalSMS();
+        mensajero.enviarMensaje(canalSMS, "+1234567890", "Mensaje de texto urgente!");
+    }
+}
